@@ -123,5 +123,18 @@ We can verify that both `/var/www and /mnt/apps` contains same content which sho
 ![nfsmount](./Images/nfsservermountverify.PNG)
 
 
+The git repository is cloned and the html folder in there is moved to the apache webserver folder.
 
+![git](./Images/gitfork.PNG)
 
+Run <public_ip_address>/index.php on a web browser to access the site. Use public_ip_address of the web server
+
+![site](./Images/tooling_site.PNG)
+
+In the `/var/www/html` directory, edit the already written php script to connect to the database `sudo vi /var/www/html/functions.php`
+
+![sql](./Images/databaseconfig.PNG)
+
+Login into the application on the browser `<public_ip_address>/login.php
+
+![login](./Images/loginsite.PNG)
